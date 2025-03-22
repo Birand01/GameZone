@@ -11,7 +11,7 @@ export default function ReviewDetails({navigation}) {
 
   return (
     <View style={globalStyles.container}>
-      <Text>ReviewDetails</Text>
+      <Text>{navigation.getParam("rating")}</Text>
      
     </View>
   )

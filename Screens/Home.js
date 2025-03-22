@@ -8,7 +8,7 @@ export default function Home({navigation}) {
     [
       {title:"Zelda, Breath of Fresh Air",rating:5,body:"lorem ipsum",key:1},
       {title:"Gotta Catch Them all",rating:4,body:"lorem ipsum",key:2},
-      {title:"Final Fantasy",rating:5,body:"lorem ipsum",key:3},
+      {title:"Final Fantasy",rating:3,body:"lorem ipsum",key:3},
 
     ]
   );
