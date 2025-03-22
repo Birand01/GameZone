@@ -12,7 +12,7 @@ export default function ReviewDetails({navigation}) {
   return (
     <View style={globalStyles.container}>
       <Text>ReviewDetails</Text>
-      <Button title="Back to Home Screen" onPress={pressHandler}/>
+     
     </View>
   )
 }
