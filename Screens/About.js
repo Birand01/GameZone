@@ -4,9 +4,9 @@ import { globalStyles } from '../styles/Global'
 
 export default function About() {
   return (
-    <Views style={globalStyles.container}>
+    <View style={globalStyles.container}>
       <Text>About</Text>
-    </Views>
+    </View>
   )
 }
 

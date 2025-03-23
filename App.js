@@ -1,10 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './Screens/Home';
-import Navigator from "./Routes/HomeStack";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import DrawerNavigator from './Routes/Drawer';  // Ensure correct import
+
 export default function App() {
   return (
-   <Navigator/>
+    <NavigationContainer>
+      <DrawerNavigator />
+    </NavigationContainer>
   );
 }
-

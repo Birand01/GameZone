@@ -1,20 +1,16 @@
-import { View, Text,Button } from 'react-native'
-import React from 'react'
-import { globalStyles } from '../styles/Global'
-export default function ReviewDetails({navigation}) {
+import { View, Text, Button } from 'react-native';
+import React from 'react';
+import { globalStyles } from '../styles/Global';
 
-  const pressHandler=()=>
-  {
-    navigation.goBack();
-  }
-
+export default function ReviewDetails({ route, navigation }) {
+  // ✅ Use route.params instead of navigation.getParam()
+  const { title, body, rating } = route.params;
 
   return (
     <View style={globalStyles.container}>
-       <Text>{navigation.getParam("title")}</Text>
-       <Text>{navigation.getParam("body")}</Text>
-      <Text>{navigation.getParam("rating")}</Text>
-     
+      <Text>{title}</Text>
+      <Text>{body}</Text>
+      <Text>{rating}</Text>
     </View>
-  )
+  );
 }

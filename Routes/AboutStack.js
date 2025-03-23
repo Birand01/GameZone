@@ -1,24 +1,12 @@
-import { createStackNavigator } from "react-navigation-stack";
-import About from "../Screens/About";
+import { createStackNavigator } from '@react-navigation/stack';
+import About from '../Screens/About';
 
+const Stack = createStackNavigator();
 
-const screens=
-{
-    About:{
-        screen:About,
-        navigationOptions:{
-            title:"About GameZone",
-            //headerStyle:{backgroundColor:"#eee"}
-        }
-    },
-   
-   
+export default function AboutStack() {
+  return (
+    <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#eee', height: 90 } }}>
+      <Stack.Screen name="About" component={About} options={{ title: 'About GameZone' }} />
+    </Stack.Navigator>
+  );
 }
-const AboutStack=createStackNavigator(screens,{defaultNavigationOptions:
-    {
-        headerTintColor:"#444",
-        headerStyle:{backgroundColor:"#eee",height:90}
-    }
-});
-
-export default AboutStack;
